@@ -18,7 +18,7 @@ go run server/main.go
  While running the above command, your server will start listening at port `:3030` for all the remote procedure calls. 
 #### Run your client:
 ```
-go run client/client.go
+go run go-client/main.go
 ```
 This will run a gin server which accepts an http request on port `:9002` and serves a response in http format by fetching it using gRPC from another sever. 
 
