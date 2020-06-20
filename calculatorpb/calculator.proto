@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package calculatorpb;
+
+//A request message which'll take two variables as input
+message Request {
+    float value1 = 1;
+    float value2 = 2;
+    string operation = 3;
+}
+
+//Response message which contains result of the operation
+message Response {
+    float result = 1;
+}
+
+service Calculator {
+    rpc Calculate(Request) returns (Response);
+}
